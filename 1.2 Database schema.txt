@@ -1,0 +1,50 @@
+Database Schema
+
+Flights table
+    flight_id (Primary Key): id เที่ยวบิน 
+    origin: ต้นทาง
+    destination: ปลายทาง
+    departure_time: เวลาออกเดินทาง
+    arrival_time: เวลาถึงที่หมาย
+    aircraft_type: ประเภทของเครื่องบิน
+    available_seats: ที่นั่งที่ยังว่างอยู่
+    seat_id(Foreign Key):รหัสที่นั้ง
+
+Seat table
+    seat_id: รหัสที่นั้ง
+    seat_name: ชื่อที่นั้ง
+    seat_status: สถานะที่นั้ง
+
+Passengers table
+    passenger_id (Primary Key): รหัสผู้โดยสาร 
+    first_name: ชื่อ
+    last_name: นามสกุล
+    passport_number: หมายเลขหนังสือเดินทาง (ถ้ามี)
+    contact_information: ข้อมูลติดต่อ
+
+Bookings table
+    booking_id (Primary Key): รหัสการจอง 
+    flight_id (Foreign Key): รหัสเที่ยวบิน 
+    passenger_id (Foreign Key): รหัสผู้โดยสาร
+    seat_number: หมายเลขที่นั่ง
+    payment_status: สถานะการชำระเงิน
+    booking_date: วันที่จอง
+
+Payments table
+    payment_id (Primary Key): รหัสการชำระเงิน 
+    booking_id (Foreign Key): รหัสการจอง
+    amount: จำนวนเงิน
+    payment_method: วิธีการชำระเงิน
+    payment_date: วันที่ชำระเงิน
+
+
+Admin Users table
+    admin_id (Primary Key): รหัสผู้ดูแลระบบ
+    username: ชื่อผู้ใช้
+    password: รหัสผ่าน (เข้ารหัส)
+    role: บทบาท เช่น แอดมิน, พนักงานบริการ
+
+
+Booking Services table
+    booking_service_id (Primary Key): รหัสบริการในการจอง
+    booking_id (Foreign Key): รหัสการจอง
