@@ -12,4 +12,4 @@ const starLoop = () => {
       console.log(starLine);
     }
   };
-  console.log(starLoop());
+starLoop(); //Start function
