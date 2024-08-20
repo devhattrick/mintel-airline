@@ -1,0 +1,4 @@
+Frontend: React.js => Component สามารถ reuse เพื่อใช้ซ้ำในส่วนต่าง ๆ ของเว็บได้ และเป็นภาษาเดียวกัน คือ Base on javascript
+Backend: Node.js + Express.js =>:เป็น javaScript ที่ทำหน้าที่อยู่ฝั่ง Backend และเป็นภาษาเดียวกัน คือ Base on javascript ง่ายต่อการเรียนรู้ มี library ฟรีหลายตัว lightweight
+Database: PostgreSQL => RDBMS เก็บข้อมูลในรูปแบบของตาราง (table) จัดการข้อมูลที่มีความสัมพันธ์ระหว่างตาราง เช่น ข้อมูลการจอง, ข้อมูลเที่ยวบิน  PostgreSQL ซึ่งมี built-in multiversion concurrency control (MVCC) จะไม่เกิดการ read-write locks ขึ้นและจำทำงานได้ดีในกรณีที่มีการ write บ่อยและพร้อมกัน
+Authentication: JWT Token จัดการการเข้าสู่ระบบและรักษาความปลอดภัยของข้อมูลผู้ใช้
