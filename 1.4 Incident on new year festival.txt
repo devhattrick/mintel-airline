@@ -1,0 +1,2 @@
+ปัญหาที่อาจเกิดขึ้น: Transaction จำนวนมากใเวลาเดียวกัน อาจทำให้ระบบช้าหรือล่ม
+แนวทางคือ อาจใช้ Kubernetes มาช่วยจัดการการทำ load balance service container app เพื่อช่วยขยาย scale app
